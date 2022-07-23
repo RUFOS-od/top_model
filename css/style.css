@@ -462,7 +462,7 @@ a.fullpricelist {
 .testimonialarea-bubble {
 	display: Inline-block;
     width: 330px;
-    height: 330px;
+    /* height: 330px; */
     background: rgba(90, 227, 241, 0.5);
     color: #333;
     border-radius: 100%;
@@ -1045,6 +1045,82 @@ footer .container {max-width:96%;margin:0px auto;}
 .footericons a {color:#fff;}
 
 
+@media screen and (max-width:1680px) {
+  p.comment-form-email, p.comment-form-author, p.comment-form-url {
+      width:100%;
+      display:block;
+      float:none;
+    }
+    #comments input {
+      width:80%;
+    }
+    body {
+      overflow-x: hidden;
+      overflow-y: scroll !Important;
+      }
+      body.frontbeauttio {
+        overflow-y:scroll !Important;
+        }
+  
+        .background {
+            background-size:cover;
+         background-repeat:no-repeat;
+         background-position:center center;
+         will-change:none;
+         -webkit-backface-visibility:none;
+         backface-visibility:none;
+         height:100%;
+         position:relative;
+         width:100%;
+         -webkit-transform:none;
+         transform:none;
+         -webkit-transition:0;
+         transition:0;
+         padding:170px 0;
+      }
+      body.frontbeauttio {
+        overflow-y:scroll !Important;
+      }
+      .content-wrapper {
+         height:100%;
+         display:block;
+         -webkit-box-pack:initial;
+         -webkit-justify-content:initial;
+         -ms-flex-pack:initial;
+         justify-content:initial;
+         text-align:center;
+         -webkit-flex-flow:initial;
+         -ms-flex-flow:initial;
+         flex-flow:initial;
+         color:#fff;
+         -webkit-transform:none;
+         transform:none;
+         will-change:none;
+         -webkit-backface-visibility:hidden;
+         backface-visibility:hidden;
+         -webkit-transition:initial;
+         transition:0;
+            color:#fff;
+         position:relative;
+      }
+      .contactaddress-bubble {
+        
+        display: inline-block;
+        width: 200px;
+        height: 200px;
+        background: rgba(253, 216, 34, 0.44);
+        color: rgba(255,255,255,0.5);
+        border-radius: 100%;
+        margin-left: 524px;
+    }
+        .background.up-scroll .content-wrapper,	.background.down-scroll .content-wrapper,	.background:first-child .content-wrapper,	.background.up-scroll,	.background.down-scroll,	.background:first-child,	.background.down-scroll+.background:not(.down-scroll),	.background.up-scroll+.background .content-wrapper,	.background.down-scroll+.background .content-wrapper,	.background.up-scroll+.background {
+            -webkit-transform:translate3d(0,0,0) !Important;
+            transform:translate3d(0,0,0) !Important;
+            -webkit-transform:none !Important;
+            transform:none !Important;
+      }
+  }
+
 @media screen and (max-width:1280px) {
 p.comment-form-email, p.comment-form-author, p.comment-form-url {
 		width:100%;
@@ -1139,7 +1215,7 @@ p.comment-form-email, p.comment-form-author, p.comment-form-url {
 		text-align:center;
 		position:relative;
 		display:block;
-		vertical-align:middle;
+		/* vertical-align: middle; */
 		margin-top:0px;
 		margin-bottom:0px;
 		left:auto;
@@ -1205,3 +1281,4 @@ p.comment-form-email, p.comment-form-author, p.comment-form-url {
 			 padding: 30px 30px;
 	}
 }
+

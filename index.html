@@ -15,7 +15,7 @@
 <!-- Favicon -->
 <link href="img/logo.png" rel="icon">
 <link href="css/style.css" rel="stylesheet">
-<link rel="stylesheet" href="../maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<!-- <link rel="stylesheet" href="../maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> -->
 <link href='https://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400italic,300italic,300,700,700italic' rel='stylesheet' type='text/css'>
@@ -29,11 +29,11 @@
 </head>
 <body class="frontpage">
 
-<div id="loader-wrapper">
+<!-- <div id="loader-wrapper">
 <div id="loader"></div>
 <div class="loader-section section-left"></div>
 <div class="loader-section section-right"></div>
-</div>
+</div> -->
 
 <img src="img/logo.jpeg" width="20%" height="10%">
 <div class="menu-outer">
@@ -44,7 +44,7 @@
     </div>
     <nav>
         <ul>
-           <li><a href="index-2.html">Accueil</a></li>
+           <li><a href="index.html">Accueil</a></li>
            <li><a href="#">Notre Programme</a></li>
            <li><a href="#">Nos selections</a></li>
            <li><a href="#">Nos Contacts</a></li>
@@ -91,26 +91,26 @@
 						<li>Niveau d'etude à partir de la classe de 2nde</li>
 					</ul> <br>
 
-					<form  style="background: white;" class="contactform" method="post" action="../bestmodelivoire.com/php/inscription.php" id="contactform">
+					<form  style="background: white;" class="contactform" method="POST" action="php/inscription.php" id="contactform">
 						<h2 style="color: black;">INSCRIPTION</h2>
 						
                         <!-- gestion des msg d'erreur et de sucess -->
             <div class="succesModel" style="text-align: center;background: green;color:white;display: none;"></div>
             <div class="errorModel" style="text-align: center;background: red;color:white;display: none;"></div>
             
-					<input type="radio" name="genreModel" value="Homme" placeholder="Homme"> <small style="color: black;">Homme </small>
-					<input type="radio" name="genreModel" value="Femme" placeholder="Femme"> <small style="color: black;">Femme </small>
+					<input required type="radio" name="genreModel" value="Homme" placeholder="Homme"> <small style="color: black;">Homme </small>
+					<input required type="radio" name="genreModel" value="Femme" placeholder="Femme"> <small style="color: black;">Femme </small>
 				
-					<input name="nomModel" type="text" placeholder="Nom">
-					<input name="prenomModel" type="text" placeholder="Prenoms">
-					<input name="ageModel" type="number" placeholder="âge">
-					<label style="color: black;">choisir une photo entière</label>
-					<input name="photoModel" type="file" placeholder="photo">
-					<input name="mailModel" type="text" placeholder="Email">
-					<input name="numModel" type="text" placeholder="Telephone">
-					 <input name="poidsModel" type="number" placeholder="Masse en kg"> 
-					<input name="villeModel" type="text" placeholder="Ville">
-					<input name="tailleModel" type="text" placeholder="Taille (ex : 1m20)"> <br><br>
+					<input required name="nomModel" type="text" placeholder="Nom">
+					<input required name="prenomModel" type="text" placeholder="Prenoms">
+					<input required name="ageModel" type="number" placeholder="âge">
+					<label required style="color: black;">choisir une photo entière</label>
+					<input  name="photoModel" type="file" placeholder="photo">
+					<input name="emailModel" type="text" placeholder="emailModel">
+					<input required name="numModel" type="text" placeholder="Telephone">
+					 <input required name="poidsModel" type="number" placeholder="Masse en kg"> 
+					<input required name="villeModel" type="text" placeholder="Ville">
+					<input required name="tailleModel" type="text" placeholder="Taille (ex : 1m20)"> <br><br>
 					<!-- <textarea name="comment" placeholder="Pourquoi" rows="4"></textarea> -->
 					<!-- gestion des msg d'erreur et de sucess -->
             <div class="succesModel" style="text-align: center;background: green;color:white;display: none;"></div>
@@ -234,14 +234,14 @@
 
 <!-- Scripts -->
 <!-- Latest compiled and minified JavaScript -->
-<script src="../cdn.jsdelivr.net/npm/bootstrap%403.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<script src="../ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="js/common.js"></script>
+<!-- <script src="../cdn.jsdelivr.net/npm/bootstrap%403.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+<!-- <script src="../ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
+<!-- <script src="js/common.js"></script> -->
 <script src="js/home.js"></script>
 <script src="js/testimonials.js"></script>
 
 
-<script type="text/javascript">
+<!-- <script type="text/javascript">
     $(function () 
       {
       
@@ -281,7 +281,7 @@
          
         });
       })
-</script>
+</script> -->
 </body>
 
 <!-- Mirrored from bestmodelivoire.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 22 Jul 2022 08:40:20 GMT -->

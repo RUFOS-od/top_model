@@ -16,8 +16,10 @@ $db = new mysqli('localhost', 'root', '', 'bestmodelivoire');
 if ($db->connect_error) {
     die('Erreur de connexion (' . $db->connect_errno . ') ' . $db->connect_error);
 }else{
-    $stmt = $db->prepare("INSERT INTO inscription (genreModel, nomModel, prenomModel, ageModel, photoModel, emailModel, numModel, poidsModel, villeModel, tailleModel) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
-    $stmt->bind_param('ssssssssss', $genreModel, $nomModel, $prenomModel, $ageModel, $photoModel, $emailModel, $numModel, $poidsModel, $villeModel, $tailleModel);
+    $stmt = $db->prepare("INSERT INTO inscription (genreModel, nomModel, prenomModel,emailModel, ageModel, photoModel, numModel, poidsModel, villeModel, tailleModel) VALUES (?,?, ?, ?, ?, ?, ?, ?, ?, ?)");
+    $stmt->bind_param('ssssssssss', $genreModel, $nomModel, $prenomModel,$emailModel, $ageModel, $photoModel, $numModel, $poidsModel, $villeModel, $tailleModel);
     $stmt->execute();
+    echo "Inscription réussie";
     $stmt->close();
+    $db->close();
 }
